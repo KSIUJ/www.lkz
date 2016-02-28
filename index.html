@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <link href="css/style.css" rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css">
+    <link href="css/style.css" rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Liczby Komputery Życie" content="Liczby Komputery Życie">
+    <meta name="author" content="Michał Bakalarski">
+
+    <title>Liczby Komputery Życie</title>
+
+    <!-- Bootstrap Core CSS -->
+    <style>
+      #map-canvas {
+        width: 70%;
+        height: 400px;
+		float: left;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=en"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+		
+		var wmii = new google.maps.LatLng( 50.030804, 19.906979);
+		
+        var mapOptions = {
+          center: wmii,
+          zoom: 16,
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+		
+		var marker = new google.maps.Marker({
+			position: wmii,
+			map: map,
+			title: 'Hello World!'
+		});
+  map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json');
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    </script> 
+
+</head>
+
+<body>
+<div class="whole">
+
+	<div class="menudivwrap">
+		<div class="menudiv">
+			<ul class="menu">
+				<li><a href="/up" class="upIcon" title="Home"></a></li>
+				<li><a href="/people" class="tile2">Prelegenci</a></li>
+				<li><a href="/about" class="tile3">Info</span></a></li>
+				<li><a href="/register" class="register">Rejestracja</span></a></li>
+				<li><a href="warsztaty.html" class="w">Warsztaty</span></a></li>
+				<li><a href="/agenda" class="tile4">Agenda</a></li>
+				<li><a href="/faq" class="tile5">FAQ</span></a></li>
+				<li><a href="/contact" class="tile7">Kontakt</a></li>
+				<li><a href="/org" class="tile6">Organizatorzy</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="all">
+	
+		<div class="block1wrap">
+		<a name="block1wrap"></a>
+			<div class="block1">
+				<div class="treeLogo">
+				
+				</div>
+				<div class="about">
+					<br>
+				<h3>O konferencji</h3><h1>&nbspNasza konferencja ma na celu zapoznanie studentów z dostępnymi technikami i praktycznymi zastosowaniami matematyki i informatyki, o których rzadko mówi się na kursach bioinformatycznych.
+				</br></br>
+				&nbspBioinformatyka jest interdyscyplinarną dziedziną nauki obejmującą wykorzystanie metod obliczeniowych do badania danych biologicznych. Jest ona silnie powiązana z ewolucją molekularną i genetyką populacyjną. Wykorzystuje narzędzia matematyczne i informatyczne do badań nad informacją biologiczną zebraną w ciągu ostatnich dekad. Bioinformatyka stara się odpowiedzieć na pewne pytania biologiczne, rozwiązać problemy ujęte w ramy algorytmów i baz danych, tak aby usystematyzować, ujednolicić, a jednocześnie poszerzyć wiedzę biologiczną.
+				</h1>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="block2wrap">
+		<a name="block2wrap"></a>
+			<div class="block2">
+				<h3>Prelegenci</h3></br></br>
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/DanielWojcik.png" alt="f"   vspace="33"/>
+					</div>
+					<div class="personTitleR">
+						<h2>prof. dr hab. Daniel Wójcik</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Pracownia Neuroinformatyki
+Instytut Biologii Doświadczalnej im. Marcelego Nenckiego PAN w Warszawie</h4>
+					</div>
+					<div class="personDescR">
+						
+Jeden z czołowych specjalistów w dziedzinie neuroinformatyki.
+Tematykę jego pracy badawczej stanowią zagadnienia modelowania i analizy aktywności neuronalnej, elektrofizjologii, neurobiologii obliczeniowej, tworzenia neuroinformatycznych systemów bazodanowych takich jak trójwymiarowe atlasy mózgu.
+					</div>
+				</div>
+				
+				<div class="personBox">
+					<div class="personAvatar">
+						<img id="avatarPic" src="images/tempAv.png" alt="next"  vspace="10"/>
+					</div>
+					<div class="personTitle">
+						<h2>prof.dr hab. Piotr Zielenkiewicz</h2>
+					</div>
+					<div class="personTitle">
+						<h4>Zakład Bioinformatyki, Instytut Biochemii i Biofizyki PAN w Warszawie</h4>
+					</div>
+					<div class="personDesc">
+Dyrektor Instytutu Biochemii i Biofizyki PAN w Warszawie. Kierownik Zakładu Bioinformatyki, na którym jest również koordynatorem dwóch projektów badawczych: Metody informatyczne w biologii molekularnej oraz Modelowanie struktury i funkcji białek.				</div>
+				</div>
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/SlawomirFilipek.png" alt="f"   vspace="20"/>
+					</div>
+					<div class="personTitleR">
+						<h2>prof. dr hab. Sławomir Filipek</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Wydział Chemii, Uniwersytet Warszawski</h4>
+					</div>
+					<div class="personDescR">
+						
+Znany specjalista w dziedzinie chemii. Jego prace badawcze obejmują zagadnienia projektowania leków, modelowania struktur i badania dynamiki białek błonowych, badania procesów aktywacji białek, rozwoju nowych metod do gruboziarnistego modelowania białek, procesy oligomeryzacji białek i peptydów, grafiki komputerowej.
+                    
+					</div>
+				</div>
+				
+				<div class="personBox">
+					<div class="personAvatar">
+						<img id="avatarPic" src="images/Bielecki.png" alt="next"  vspace="17"/>
+					</div>
+					<div class="personTitle">
+						<h2>dr hab. Andrzej Bielecki, prof. AGH</h2>
+					</div>
+					<div class="personTitle">
+						<h4>Katedra Informatyki Stosowanej, AGH w Krakowie</h4>
+					</div>
+					<div class="personDesc">
+Pracownik AGH w Krakowie, współpracuje również z Uniwersytetem Jagiellońskim. Główne tematy badawcze jakimi się zajmuje to teoria układów dynamicznych - dynamika numeryczna,
+systemy sztucznej inteligencji - podstawy i zastosowania, biomatematyka, biocybernetyka.
+                    </div>
+				</div>
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/tempAv.png" alt="f"   vspace="5"/>
+					</div>
+					<div class="personTitleR">
+						<h2>prof. dr hab. Andrzej J. Bojarski</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Instytut Farmakologii PAN w Krakowie</h4>
+					</div>
+					<div class="personDescR">
+						
+Kierownik Zakładu Chemii Medycznej w Instytucie Farmakologii PAN w Krakowie. Jego główne tematy badawcze to komputerowo wspomagane projektowanie leków, modelowanie molekularne.
+                    
+					</div>
+				</div>
+								
+				<div class="personBox">
+					<div class="personAvatar">
+						<img id="avatarPic" src="images/tempAv.png" alt="next"  vspace="29"/>
+					</div>
+					<div class="personTitle">
+						<h2>dr hab. Izabela Makałowska, prof. UAM</h2>
+					</div>
+					<div class="personTitle">
+						<h4>Instytut Biologii Molekularnej i Biotechnologii, Uniwersytet im. Adama Mickiewicza w Poznaniu</h4>
+					</div>
+					<div class="personDesc">
+Pracuje w Laboratorium Genomiki Ewolucyjnej. Zajmuje się badaniami dotyczącymi ewolucji molekularnej, genomiki porównawczej, transkryptomiki, struktury genomów oraz biologicznych baz danych. Dodatkowo pracuje nad narzędziami do analizy genomów i transkryptomów.
+                    </div>
+				</div>
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/BartekWilczynski.png" alt="f"   vspace="5"/>
+					</div>
+					<div class="personTitleR">
+						<h2>dr Bartek Wilczyński</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Instytut Informatyki, Uniwersytet Warszawski</h4>
+					</div>
+					<div class="personDescR">
+						
+Zajmuje się modelami obliczeniowymi regulacji genów. Interesują go
+przede wszystkim modele pozwalające przewidywać ekspresję genów
+specyficzną tkankowo. Ostatnio koncentruje się na analizie wpływu
+struktury chromatyny na regulację ekspresji.
+                    
+					</div>
+				</div>
+				
+												
+				<div class="personBox">
+					<div class="personAvatar">
+						<img id="avatarPic" src="images/TomaszLipniacki.png" alt="next"  vspace="70"/>
+					</div>
+					<div class="personTitle">
+						<h2>prof. dr hab. Tomasz Lipniacki</h2>
+					</div>
+					<div class="personTitle">
+						<h4>Instytut Podstawowych Problemów Techniki Polskiej Akademii Nauk w Warszawie
+</br></br>
+Zakład Mechaniki i Fizyki Płynów (ZMiFP)
+</br>Pracownia Modelowania w Biologii i Medycynie (PMBM)
+        </h4>
+					</div>
+					<div class="personDesc">
+Z wykształcenia jest fizykiem, który zajął się matematycznym
+modelowaniem w biologii, a obecnie prowadzi pracownie z laboratorium
+eksperymentalnym: <a href="http://pmbm.ippt.pan.pl" target="_blank" >http://pmbm.ippt.pan.pl</a>.  Jego zainteresowania badawcze
+ogniskują się wokół zagadnienia podejmowania decyzji przez komórki w
+odpowiedzi na stres. Ostatnio prowadzone badania, doświadczalne i
+teoretyczne, dotyczą mechanizmów nieswoistej obrony immunologicznej i
+procesów z nią związanych.
+                    </div>
+				</div>
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/laszczyca2.png" alt="f"   vspace="40"/>
+					</div>
+					<div class="personTitleR">
+						<h2>dr hab. Piotr Łaszczyca</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Katedra Fizjologii Zwierząt i ekotoksykologii UŚ Katowice</h4>
+					</div>
+					<div class="personDescR">
+						
+Biolog, specjalność fizjologia zwierząt. Prowadzi zajęcia z m.in. podstaw neurobiologii, fizjologii pracy i ergonomii, ekologii człowieka, zajmuje się m.in. ekotoksykologią. Ostatnio uczestniczył w dużym projekcie Zintegrowany System Zarządzania i Ochrony Zbiornika Zaporowego, którego jednym z końcowych rezultatów było zbudowanie i uruchomienie cyfrowego modelu ekosystemu zbiornika zaporowego. Na co dzień lubi posługiwać się prostymi modelami matematycznymi zjawisk przyrodniczych.
+                    
+					</div>
+				</div>
+				
+				<!--
+				
+				AVATAR PO PRAWEJ
+				
+				<div class="personBoxR">
+					<div class="personAvatarR">
+						<img id="avatarPicR" src="images/tiurynAvatar.png" alt="f"   vspace="20"/>
+					</div>
+					<div class="personTitleR">
+						<h2>prof. Jerzy Tiuryn</h2>
+					</div>
+					<div class="personTitleR">
+						<h4>Instytut Informatyki, Uniwersytet Warszawski</h4>
+					</div>
+					<div class="personDescR">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus est nibh, sit amet sollicitudin nibh tempor sit amet. Etiam ut condimentum eros, ac cursus nisi. Mauris tellus purus, tincidunt id tortor nec, suscipit faucibus sapien. Duis mattis sem a velit consequat, sit amet iaculis
+					</div>
+				</div>
+				-->
+			</div>
+			
+		
+		</div>
+		
+				
+		<div class="block3wrap">
+		<a name="block3wrap"></a>
+				<h3>Informacje</h3>
+			<div class="block3">
+		
+<object type="text/html" data="info.htm" width="100%" height="460px">
+Nadchodząca, czwarta już, edycja konferencji jest unikalnym na skalę kraju wydarzeniem bioinformatycznym skierowanym szczególnie do studentów i doktorantów. Ma za zadanie stworzenie platformy do dyskusji i nawiązania współpracy pomiędzy przedstawicielami nauk matematycznych i przyrodniczych. Odbywające się w jej trakcie panele będą poświęcone tematom: bioinformatyki, biomatematyki, neuroinformatyki, sztucznej inteligencji biocybernetyki.
+Nowym elementem wprowadzonym do agendy konferencji będą warsztaty skierowane zarówno do osób z gruntowną wiedzą biologiczną i niewielką znajomością informatyki, jak również uczestników z doświadczeniem programistycznym zainteresowanych naukami biomedycznymi. Różne poziomy trudności pozwolą na znalezienie odpowiedniego warsztatu dostosowanego do własnych możliwości. Niebawem opublikowane zostaną tematy warsztatów oraz formularz zgłoszeniowy.
+
+</object>	
+
+			
+
+			</div>
+		
+		</div>
+	
+	
+	<!-- 3 kolumny
+		<div class="block3wrap">
+				<h3>Jakieś tam informacje</h3>
+			<div class="block3">
+				<div class="textBlock3">
+				&nbsp&nbsp&nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare tellus non metus consectetur, vitae rhoncus augue tempor. Nulla ut tincidunt purus. Donec quis tincidunt tortor, eget suscipit nulla. Quisque nec neque sit amet erat mollis dignissim. In rhoncus purus et odio vulputate rhoncus. Etiam sodales iaculis metus et placerat. Phasellus libero neque, mollis ut ullamcorper sed, placerat ut diam. Sed nec facilisis tortor, vestibulum malesuada ex. Quisque in dolor augue. Nulla interdum ante non velit ultricies viverra. Vestibulum consequat nunc eu ex tristique, id sollicitudin massa sodales. Mauris pellentesque sem quis sapien dictum, vitae convallis nisi sollicitudin. Cras varius ipsum velit, vitae blandit orci vulputate ac. Suspendisse pellentesque sapien iaculis, volutpat libero et, imperdiet nisl. Sed ornare vehicula urna, eget varius odio sollicitudin in. Mauris in turpis ut nisi tincidunt sagittis.
+
+Fusce vulputate mauris quis lorem molestie lobortis. Aenean accumsan lectus a euismod congue. Sed porttitor egestas sapien in auctor. In convallis orci vitae eros facilisis, ac pretium odio volutpat. Nunc venenatis lobortis tortor nec ullamcorper. Phasellus tempus congue laoreet. Morbi egestas arcu tellus, eget dictum sem aliquet et. Suspendisse potenti. Sed fermentum laoreet dolor. Donec elementum felis et mi sagittis, vitae ultrices erat posuere. Vivamus vel libero id nisl aliquet suscipit eget in mi. Duis vehicula tincidunt tincidunt. Nunc lorem nisi, auctor vitae mi hendrerit.
+				</div>
+				<div class="textBlock3">
+				&nbsp&nbsp&nbsp&nbspNullam ornare tellus non metus consectetur, vitae rhoncus augue tempor. Nulla ut tincidunt purus. Donec quis tincidunt tortor, eget suscipit nulla. Quisque nec neque sit amet erat mollis dignissim. In rhoncus purus et odio vulputate rhoncus. Etiam sodales iaculis metus et placerat. Phasellus libero neque, mollis ut ullamcorper sed, placerat ut diam. Sed nec facilisis tortor, vestibulum malesuada ex. Quisque in dolor augue. Nulla interdum ante non velit ultricies viverra. Vestibulum consequat nunc eu ex tristique, id sollicitudin massa sodales. Mauris pellentesque sem quis sapien dictum, vitae convallis nisi sollicitudin. Cras varius ipsum velit, vitae blandit orci vulputate ac. Suspendisse pellentesque sapien iaculis, volutpat libero et, imperdiet nisl. Sed ornare vehicula urna, eget varius odio sollicitudin in. Mauris in turpis ut nisi tincidunt sagittis.
+
+Fusce vulputate mauris quis lorem molestie lobortis. Aenean accumsan lectus a euismod congue. Sed porttitor egestas sapien in auctor. In convallis orci vitae eros facilisis, ac pretium odio volutpat. Nunc venenatis lobortis tortor nec ullamcorper. Phasellus tempus congue laoreet. Morbi egestas arcu tellus, eget dictum sem aliquet et. Suspendisse potenti. Sed fermentum laoreet dolor. Donec elementum felis et mi sagittis, vitae ultrices erat posuere. Vivamus vel libero id nisl aliquet suscipit eget in mi. Duis vehicula tincidunt tincidunt. Nunc lorem nisi, auctor vitae mi hendrerit, vehicula maximus magna.
+				</div>
+				<div class="textBlock3">
+				&nbsp&nbsp&nbsp&nbspConsectetur, vitae rhoncus augue tempor. Nulla ut tincidunt purus. Donec quis tincidunt tortor, eget suscipit nulla. Quisque nec neque sit amet erat mollis dignissim. In rhoncus purus et odio vulputate rhoncus. Etiam sodales iaculis metus et placerat. Phasellus libero neque, mollis ut ullamcorper sed, placerat ut diam. Sed nec facilisis tortor, vestibulum malesuada ex. Quisque in dolor augue. Nulla interdum ante non velit ultricies viverra. Vestibulum consequat nunc eu ex tristique, id sollicitudin massa sodales. Mauris pellentesque sem quis sapien dictum, vitae convallis nisi sollicitudin. Cras varius ipsum velit, vitae blandit orci vulputate ac. Suspendisse pellentesque sapien iaculis, volutpat libero et, imperdiet nisl. Sed ornare vehicula urna, eget varius odio sollicitudin in. Mauris in turpis ut nisi tincidunt sagittis.
+
+Fusce vulputate mauris quis lorem molestie lobortis. Aenean accumsan lectus a euismod congue. Sed porttitor egestas sapien in auctor. In convallis orci vitae eros facilisis, ac pretium odio volutpat. Nunc venenatis lobortis tortor nec ullamcorper. Phasellus tempus congue laoreet. Morbi egestas arcu tellus, eget dictum sem aliquet et. Suspendisse potenti. Sed fermentum laoreet dolor. Donec elementum felis et mi sagittis, vitae ultrices erat posuere. Vivamus vel libero id nisl aliquet suscipit eget in mi. Duis vehicula tincidunt tincidunt. Nunc lorem nisi, auctor vitae mi hendrerit, vehicula maximus magna. Donec blandit dictum rutrum.
+				</div>
+			</div>
+		
+		</div>
+		-->
+		
+		<div class="rejestracjawrap">
+		<a name="rejestracjawrap"></a>
+				<h3>Rejestracja</h3>
+			<div class="rejestracja">
+			
+			
+			</br>
+<h4><b>Uczestnictwo bierne</b></h4>
+Uczestnictwo bierne w konferencji wymaga rejestracji.</br></br>
+<h4><b>Uczestnictwo czynne</b></h4>
+Aktywni uczestnicy konferencji mogą zgłaszać chęć wygłoszenia referatu lub przedstawienia plakatu. Zgłoszenia można przesyłać do dnia 22.04.2015 (do godziny 23:59).
+Zgłoszenie powinno mieć formę wydłużonego abstraktu (max. 300 słów bez bibliografii). Bibliografia powinna mieć formę zgodną ze standardem MLA. 
+</br></br>
+<h4><b>Referaty</b></h4>
+Czas trwania wystąpienia to 20 minut (15 minut prezentacji + 5 minut na dyskusję). 
+</br></br>
+<h4><b>Sesja posterowa</b></h4>
+Preferowane formaty posterów to A1 lub A0. Na plakacie, poza treścią, powinny znaleźć się informacje na temat autorów, abstrakt oraz spis literatury zgodnie ze standardem MLA.
+</br>
+
+</br>
+<h4><b>Zapisy zarówno czynnych jak i biernych uczestników znajdują się w formularzu dostępnym tutaj:</b></h4>
+<a href="http://goo.gl/forms/WwUtIl8qfS" target="_blank" class="regbutton"></a>
+			</div>
+		
+		</div>
+		
+	
+		<div class="block4wrap">
+		<a name="block4wrap"></a>
+				<h3>Agenda</h3>
+			<div class="block4">
+			
+
+<object type="text/html" data="agenda.htm" width="100%" height="970px">
+<p>backup content</p>
+</object>
+
+Pełna agenda oraz książka abstraktów znajdują się <a href="../ksiazka_abstraktow.pdf" target="_blank">tutaj</a></br></br>
+
+			</div>
+		
+		</div>
+	
+	
+		<div class="block5wrap">
+		<a name="block5wrap"></a>
+				<h3>FAQ</h3></br>
+			<div class="block5">
+					<h4><b>1. Czym jest konkurs abstraktów?</b></h4>
+Z oczywistych przyczyn jakim jest ograniczony czas trwania konferencji osoby zainteresowane wygłoszeniem prezentacji proszone są o wysłanie abstraktu streszczającego ich pracę. Osoby, których abstrakty zostaną wyłonione, wygłoszą 20 minutowe prezentacje ustne (powiadomimy Was mailowo). Pozostałych zapraszamy do przygotowania posteru.
+</br></br><h4><b>2. Czym jest poster?</b></h4>
+Jest to forma prezentacji swoich badań/zainteresowań naukowych w formie plakatu. Używany powszechnie format to A0. Postery zawieszane będą na tablicach i wszyscy uczestnicy konferencji będą mogli zaznajomić się z ich tematyką. Autorzy na czas trwania sesji posterowej proszeni są o przebywanie w pobliżu swojego plakatu w celu dokładniejszego przybliżenia tematu oraz odpowiedzi na pytania osób zainteresowanych.  Bardzo powszechna forma wystąpień na konferencjach nauk biologicznych.
+</br></br><a href="images/poster.jpg" target="_blank" >przykładowy poster</a><br>
+</br></br>
+					<h4><b>3. Czy istnieje opłata konferencyjna?</b></h4>
+Udział w konferencji jest <b>bezpłatny</b> (zarówno dla prelegentów, jak i biernych słuchaczy).
+
+                </br></br>
+					<h4><b>4. W jakim języku jest prowadzona konferencja?</b></h4>
+Konferencja będzie prowadzona w języku polskim, dlatego też preferowane jest zarówno wysyłanie abstraktów, jak i przygotowanie wystąpień i posterów w języku polskim.
+
+</br></br><h4><b>5. Jak do nas dojechać?</b></h4>
+Adres:
+</br>WYDZIAŁ MATEMATYKI I INFORMATYKI UNIWERSYTETU JAGIELLOŃSKIEGO
+</br>Kraków, ul. Łojasiewicza 6
+</br></br>Dojechać można autobusami linii:  194 (do przystanku: Norymberska) oraz 106,166, 178 (do przystanku: Rostworowskiego)
+</br>lub tramwajami linii: 11, 18, 23 i 52
+
+</br></br><h4><b>Przydatne strony:</b></h4>
+<a href="http://www.mpk.krakow.pl">www.mpk.krakow.pl</a><br>
+<a href="http://www.krakow.jakdojade.pl">krakow.jakdojade.pl</a><br><br><br>
+<h4><b><a href="bazanoclegowa.pdf">Baza noclegowa</a></b></h4>
+
+
+</br>
+			</div>
+		
+		</div>
+	
+	
+		<div class="block7wrap">
+		<a name="block7wrap"></a>
+			<div class="block7">
+				<div id="map-canvas"></div><br><br>
+				<h3>Kontakt</h3>
+					<br>Adres:<br>
+					ul. prof. Stanisława Łojasiewicza 6<br>
+					30-348 Kraków<br>
+					<br>E-mail:<br>
+					liczbykomputeryzycie@gmail.com<br>
+					<br>Fanpage:<br>
+					<a href="http://www.facebook.com/LiczbyKomputeryZycie" target="_blank" >Facebook</a><br>
+					<a href="http://www.plus.google.com/u/8/104947186079584578096" target="_blank" >Google+</a><br>
+			</div>
+		
+		</div>
+	
+		<div class="block6wrap" name="block6wrap">
+			<a name="block6wrap"></a>
+				<h3>Organizatorzy</h3>
+				</br>
+			<div class="block6">
+				<img id="logoIMGBIG" src="images/BITlogo.png" alt="next" />
+				<img id="logoIMG" src="images/logo-slimak.png" alt="next" />
+				<img id="logoIMG" src="images/MATHlogo.png" alt="next" />
+				<img id="logoIMG" src="images/neuronus-logo.png" alt="next" />
+			</div>
+			</br></br>
+				<h2>Opiekun naukowy konferencji</h2>
+				
+</br>dr Krzysztof Murzyn
+	<!--			
+				</br></br>
+			
+				<h2>Komitet organizacyjny</h4>
+				
+				</br>...
+
+				
+</br>Michał Bakalarski
+</br>Aleksandra Bajorek
+</br>Karolina Cibor
+</br>Agnieszka Cibor
+</br>Maciej Glinowski
+</br>Aneta Latacz
+</br>Paulina Kania
+</br>Jowita Kułak
+</br>Kacper Łasocha
+</br>Kamil Malisz
+</br>Piotr Maliszewski
+</br>Agnieszka Rakowska
+		
+				</br></br>
+			
+				<h2>Komitet Naukowy</h4>
+				</br>...
+				
+</br>dr Bartosz Zieliński
+</br>dr Jacek Śmietański
+</br>dr hab. Wojciech Słomczyński
+-->	
+</br></br>
+<h2>Komitet Naukowy</h2>
+</br>dr Bartosz Zieliński
+</br>Instytut Informatyki i Matematyki Komputerowej Uniwersytetu Jagiellońskiego, Kraków
+</br></br>dr Jacek Śmietański
+</br>Instytut Informatyki i Matematyki Komputerowej Uniwersytetu Jagiellońskiego, Kraków
+</br></br>prof. dr hab. Wojciech Słomczyński
+</br>Instytut  Matematyki Uniwersytetu Jagiellońskiego, Kraków		
+				</br>
+		
+				</br>
+				
+				
+				
+		
+		<div class="blockColumnsWrap">
+			<div class="blockColumns">
+				<div class="textBlockColumns">
+				<h3>Sponsorzy</h3>
+				</br>
+				<img id="logoIMGBIG" src="images/pwn.jpg" alt="next" width="248px"/>
+				<img id="logoIMGBIG" src="images/logo_Fundacji.jpg" alt="next"/>
+				</div>
+				<div class="textBlockColumns">
+				<h3>Patronat medialny</h3>
+				</br></br>
+				<img id="logoIMGBIG" src="images/LOGO-RADIA17-du_C5_BCe.jpg" alt="next" width="200px" /></br></br></br>
+                <img id="logoIMGBIG" src="images/logo-biotechnologia_pl-big.jpg" alt="next" width="248px" />
+				</div>
+				<div class="textBlockColumns">
+				<h3>Patronat honorowy</h3>
+				</br></br>
+				<img id="logoIMGBIG" src="images/logo_ptbi.png" alt="next" width="170px" />
+				<img id="logoIMGBIG" src="images/logoDziekan.jpg" alt="next"  width="170px" />
+				</div>
+			</div>
+		
+		</div>
+				
+				
+		
+			<div class="footer">
+				<a href="https://pl.linkedin.com/pub/micha%C5%82-bakalarski/83/2a2/48a" target="_blank" >Michał Bakalarski 2015</a><br>
+			</div>
+				
+				
+				
+		</div>
+	
+	
+	</div>
+</div>
+</body>
+
+</html>
+
+<script src="scripts/jquery-1.11.2.min.js"></script>
+<script src="scripts/jQuery_functions.js"></script>
+		

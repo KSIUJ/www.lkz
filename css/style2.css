@@ -1,0 +1,136 @@
+﻿@font-face {
+    font-family: Capsuula;
+    src: url('fonts/Capsuula.eot?#iefix') format('embedded-opentype'), 
+		 url(fonts/Capsuula.ttf) format('truetype');
+}
+@font-face {
+    font-family: Capsuula;
+    src: url('fonts/Capsuula.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Capsuula.ttf') format('truetype');
+}
+
+body {
+    margin:0;
+	padding:0;
+	font:25px Capsuula, Arial, Helvetica, sans-serif; 
+	min-width:960px;
+}
+.whole {
+	min-width:1200px;
+}
+
+h1 {
+	font:20px Capsuula, Arial, Helvetica, sans-serif;
+	color:white;	
+	text-decoration: none;
+	margin:0px;
+	text-align:justify;
+	padding:5px;
+}
+t1 {
+	font:25px Capsuula, Arial, Helvetica, sans-serif;
+	color:white;	
+	text-decoration: none;
+	padding:10%;
+	margin:0px;
+	text-align:justify;
+}
+
+/* BEGIN MENU */
+
+.menudiv {
+    margin-top: 0px;
+	position: fixed;
+	background-color:#ffffff;
+}
+
+.menu { 
+	font:25px Capsuula, Arial, Helvetica, sans-serif; 
+	list-style-type:none;
+	padding:0; 
+	margin:0; 
+	float:left;
+}
+
+.menu li {  
+	position:relative;
+	float:left;
+	margin:0; 
+	list-style:none; 
+	display:inline;
+}
+
+.menu a{ 
+	text-decoration:none; 
+	padding: 0 15px;
+	float:left;
+}
+
+.menu li a { 
+	line-height:67px; 
+	text-align:center;
+	color:rgb(83,10,81); 
+	text-decoration:none; 
+	cursor:pointer; 
+	display:block;
+	float:left;
+}
+
+.menu li a:hover { 
+	background-color:#520850;
+	color:#ffffff;
+}
+.upIcon { 
+	width: 50px;
+	height:67px;
+	background:transparent url('images/upButton.png') center top no-repeat;
+}
+
+.upIcon:hover { 
+	width: 50px;
+	height:67px;
+	background:transparent url('images/upButtonHover.png') center top no-repeat;
+}
+
+/* END MENU  */
+
+/* WRAPPER */
+
+.all {
+	margin:0;
+	min-width:1200px;
+}
+
+/* END WRAPPER */
+
+.block1wrap {
+	width:100%;
+	background:transparent url('images/mainBg.png') center top no-repeat;
+	position:center;
+	height:500px;
+	background-color:#520850;
+}
+
+.block1 {
+	margin-left: auto ;
+	margin-right: auto ;
+	position:center;
+	height:500px;
+	width:1200px;
+}
+
+.about {
+	width:530px;
+	float:left; 
+	display:inline; 
+	margin-top:5%;
+}
+
+.treeLogo {
+	margin-left:55px;
+	height:500px;
+	background:transparent url('images/treeBg.png') center top no-repeat;
+	float:left; 
+	display:inline; 
+	width: 49%;
+}
