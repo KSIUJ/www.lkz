@@ -1,16 +1,16 @@
 ﻿@font-face {
     font-family: Capsuula;
-    src: url('/fonts/Capsuula.eot?#iefix') format('embedded-opentype'), 
-		 url('/fonts/Capsuula.ttf') format('truetype'),
-         url('/fonts/Capsuula-webfont.svg#Capsuula') format('svg'),
+    src: url('fonts/Capsuula.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Capsuula.ttf') format('truetype'),
+         url('fonts/Capsuula-webfont.svg#Capsuula') format('svg'),
 		 url('fonts/Capsuula.eot?#iefix') format('embedded-opentype'), 
 		 url('fonts/Capsuula.ttf') format('truetype'),
          url('fonts/Capsuula-webfont.svg#Capsuula') format('svg');
 }
 @font-face {
     font-family: Candara;
-    src: url('/fonts/Candara.eot?#iefix') format('embedded-opentype'), 
-		 url('/fonts/Candara.ttf') format('truetype');
+    src: url('fonts/Candara.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/Candara.ttf') format('truetype');
 }
 
 body {
@@ -51,17 +51,18 @@ h4{
 }
 
 a:link {
-    color: #a53fa9;
+    color: #D80A0A;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #c14ec6;
+    color: #D80A0A;
     text-decoration: none;
 }
 a:hover {
-    color: #b840bd;
+	background: #D80A0A;
+    color: white;
     text-decoration: none;
 }
 /* BEGIN MENU */
@@ -107,12 +108,12 @@ a:hover {
 .menu li a { 
 	line-height:67px; 
 	text-align:center;
-	color:rgb(83,10,81); 
+	color:#D80A0A; 
 	float:left;
 }
 
 .menu li a:hover { 
-	background-color:#520850;
+	background-color:#D80A0A;
 	color:#ffffff;
 }
 
@@ -161,9 +162,10 @@ a:hover {
 	*/
 	position:center;
 	height:500px;
-	background-color:#520850;
+	/*background-color:#D80A0A;*/
 	color:white;	
 	display: inline-block;
+	background-size: cover !important;
 }
 
 .block1 {
@@ -180,7 +182,7 @@ a:hover {
 	display:inline; 
 	text-align:center;
 	height:100%;
-	background-color:rgba(0,0,0,0.05);
+	background-color:rgba(0,0,0,0.4);
 	border-bottom:200px;
 }
 
@@ -190,6 +192,8 @@ a:hover {
 	float:left; 
 	display:inline; 
 	width:49%;
+	background-size: cover !important;
+background-color:rgba(0,0,0,0.2);
 }
 
 .block2{
@@ -243,7 +247,7 @@ a:hover {
 
 #avatarPic {
 	width:150px;
-	background: #520850; 
+	background: #D80A0A; 
 	border-radius: 150px;
 	-webkit-border-radius: 160px;
 	-moz-border-radius: 160px;
@@ -286,7 +290,7 @@ a:hover {
 
 #avatarPicR {
 	width:150px;
-	background: #520850; 
+	background: #D80A0A; 
 	border-radius: 150px;
 	-webkit-border-radius: 160px;
 	-moz-border-radius: 160px;
@@ -324,7 +328,8 @@ a:hover {
 
 .block3wrap {
 	color:white;
-	background-color:#520850;
+	background-color:#444;
+	color: #D80A0A;
 	padding-top: 20px;
 	padding-bottom: 20px;
     width: 100%;
@@ -409,7 +414,7 @@ a:hover {
 }
 
 #logoIMGBIG {
-	max-height:140px;
+	max-height:120px;
 }
 
 .block6wrap {
@@ -438,6 +443,7 @@ a:hover {
 	text-align: center;
 	display: inline-block;
 	background:transparent url('images/mainBg.png') center top no-repeat;
+	background-size: cover !important;
 	box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .8);
@@ -449,14 +455,14 @@ a:hover {
 	width:960px;
 	text-align: center;
 	display: inline-block;
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.4);
 	margin-bottom: 20px;
 }
 
 
 .workshopUpWrap {
 	color:white;
-	background-color:#520850;
+	background-color:#D80A0A;
 	padding-top: 20px;
 	padding-bottom: 20px;
     width: 100%;
@@ -478,7 +484,7 @@ a:hover {
 	
 	*/
 	position:center;
-	background-color:#520850;
+	background-color:#D80A0A;
 	color:white;	
 	display: inline-block;
 }
