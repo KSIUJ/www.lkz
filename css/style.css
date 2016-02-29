@@ -125,7 +125,7 @@ a:hover {
 }
 
 .regbutton:hover {
-   background-image: url('images/rejestracjaHover.png');
+   background: transparent url('images/rejestracja.png') center top no-repeat;
 }
 
 .upIcon { 
