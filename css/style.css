@@ -161,7 +161,7 @@ a:hover {
 	
 	*/
 	position:center;
-	height:500px;
+	height:550px;
 	/*background-color:#D80A0A;*/
 	color:white;	
 	display: inline-block;
@@ -172,7 +172,7 @@ a:hover {
 	margin-left: auto ;
 	margin-right: auto ;
 	position:center;
-	height:500px;
+	height:550px;
 	width:960px;
 }
 
@@ -192,7 +192,7 @@ a:hover {
 }
 
 .treeLogo {
-	height:500px;
+	height:550px;
 	background:transparent url('images/treeBg.png') center top no-repeat;
 	float:left; 
 	display:inline; 
@@ -521,4 +521,9 @@ background-color:rgba(0,0,0,0.2);
 	width:100%;
 	text-align: right;
 	display: inline-block;
+}
+
+.footer a{
+	font-size: 14px;
+	padding: 2px;
 }
